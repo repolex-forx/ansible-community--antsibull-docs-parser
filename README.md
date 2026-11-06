@@ -1,1 +1,128 @@
-Initializing
+# Repolex Knowledge Graph of ansible-community/antsibull-docs-parser
+
+RDF knowledge graph data for [ansible-community/antsibull-docs-parser](https://github.com/ansible-community/antsibull-docs-parser), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download ansible-community/antsibull-docs-parser
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 897ec1d91497c939470384e5751d3df60b4f7fbb
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 897ec1d91497c939470384e5751d3df60b4f7fbb
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 064928bf4328f36f30fb83535da54b1cf1baa89b.nq.gz
+│   ├── 0cb7f7a81bdb477f3529e884d9f4fb4739cf142d.nq.gz
+│   ├── 1b90dbcc04a16ca067aecc7de70f76682383af95.nq.gz
+│   ├── 220f39448bd5df36b41fe727d6e60a5684a147c2.nq.gz
+│   ├── 271b6bcb39adf1cf6f0752cef9f306154a67479e.nq.gz
+│   ├── 34a189811f5b9ef50a72abbc8330e3436171a205.nq.gz
+│   ├── 358027fb51ad1cd1971fc5fc90b88fd05c091ed2.nq.gz
+│   ├── 35ce154ae2ae0f7bb90fdbb6dc90a212db009ed9.nq.gz
+│   ├── 466518d6654c8091ebbda3a00e4ec0fce2d470ba.nq.gz
+│   ├── 4dc3a28da0e4af4bcfc573d82824656f7df0d88e.nq.gz
+│   ├── 4fa73ff307964e485367e8841d9100230cc78d80.nq.gz
+│   ├── 50804672e0269f4e8b8d20cfc9ad7a1237607c31.nq.gz
+│   ├── 51d964a6bc74181c5dc235ed41bcc723c0910283.nq.gz
+│   ├── 539537424055ee72c79f42114d988c249a0cec70.nq.gz
+│   ├── 54f3d3b2e8dab7f6d5ba7b4d09db59297cae6840.nq.gz
+│   ├── 591be5b0b8ae4559b3e4768fdd66032bd29b136c.nq.gz
+│   ├── 5bc0ba9c38b14e690792a77725d3b36a9cffc3f6.nq.gz
+│   ├── 6810e04e32878215c32b2039277d4b1809f4de4a.nq.gz
+│   ├── 6a6d4fdba2fc50200b846091df7cc882d05f5735.nq.gz
+│   ├── 6ca940711c59f938a2f4208dc33d548b0f0cf87a.nq.gz
+│   ├── 71cc4becb05eb688537c996ead522e5b33be883d.nq.gz
+│   ├── 760cc7f6814d2faea4e6fce00150840a278877d7.nq.gz
+│   ├── 84436705536e703afd60e342a5dd27c8822c808d.nq.gz
+│   ├── 8a44bd313ada0325c7f61142f34763cf8d06d491.nq.gz
+│   ├── 8b9fcebd8a6f692101217a04ae3bb8a7fc3c1a17.nq.gz
+│   ├── 906ed229e78cb37e16df5af879a0a87b5fae159c.nq.gz
+│   ├── 91c1918e7f727f022e2b0b095832b7483a0e2068.nq.gz
+│   ├── 978dadc2894a51f28cf3d48a46bf53bff2deb5e8.nq.gz
+│   ├── 9a90d9c74ac0d8f9730d375cea91ff12e9b4187a.nq.gz
+│   ├── 9cd3465da8257f03dbd7395ed1bb91ca29ac1246.nq.gz
+│   ├── 9e1bf559f4b11f515766b5f1548cb77627b00303.nq.gz
+│   ├── a3b3230299bb1fc3ecb4bd711dc61fc045d01f30.nq.gz
+│   ├── ad86328343a78c9d62481d412c811a3708cf43a7.nq.gz
+│   ├── b1c1730e83b12d2451d895c287dd4531885d159c.nq.gz
+│   ├── b2ff48132c48b7963306c3d78dbedee7391ff952.nq.gz
+│   ├── b4aaeb15545e86fac367127a5e66146dfa8077f9.nq.gz
+│   ├── b60e68402a6137a35ab3751716ae6cc8146dfb48.nq.gz
+│   ├── bb443ea69bd1358879120fee3e153d102c807d22.nq.gz
+│   ├── c9888fec8fc0d336a88465d0cd3ba0e95d59e422.nq.gz
+│   ├── d7784e8fc2a8daa9b8fe4f02bf5e863d8015b201.nq.gz
+│   ├── e21b59643743b050f36285ffde46cc61da0201b9.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── ea5b60640b01f74e295037aa8a6b7d4ea278a739.nq.gz
+│   ├── ee2102969486a0ea087ce6d0a3721a065929c9aa.nq.gz
+│   ├── f288702d2fa16d3cdf0035b15a9fcbc552cd88e7.nq.gz
+│   ├── f28ceda1745218e1fd408489aee9769c70504901.nq.gz
+│   ├── f3434a1ae34c6edbf09660b3ce240447a3639b65.nq.gz
+│   ├── f71b322d2aabd560774185ebb7c3fec99c47ef3e.nq.gz
+│   └── ff95bb8217b6b64162a2911f958f8c367bebec4c.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 897ec1d91497c939470384e5751d3df60b4f7fbb.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 57 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[ansible-community/antsibull-docs-parser](https://github.com/ansible-community/antsibull-docs-parser)
+
+---
+*Parsed on 2026-11-06 by [repolex](https://repolex.ai)*
